@@ -1,0 +1,10 @@
+[Unit]
+Description=FAN Control daemon
+Wants=local-fs.target
+
+[Service]
+ExecStart=/usr/local/sbin/fan
+Type=simple
+
+[Install]
+WantedBy=basic.target
